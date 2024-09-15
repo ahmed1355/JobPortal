@@ -4,7 +4,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import BASEURL from "../../constants/baseurl";
-import useJobContext from "../../hooks/useJobContext";
 
 const AddJob = () => {
   const [companyName, setCompanyName] = useState("");
@@ -17,8 +16,6 @@ const AddJob = () => {
   const [jobDescription, setJobDescription] = useState("");
   const [aboutCompany, setAboutCompany] = useState("");
   const [skillsRequired, setSkillsRequired] = useState([]);
-
-  const { loggedIn } = useJobContext();
 
   const navigate = useNavigate();
 

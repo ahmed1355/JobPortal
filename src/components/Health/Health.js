@@ -13,7 +13,7 @@ const HealthComponent = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`${BASEURL}/health`)
+      .get("https://job-listing-backend.onrender.com/health")
       .then((res) => {
         setHealthData(res.data);
         // setLoading(false);
